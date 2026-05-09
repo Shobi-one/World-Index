@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "ash-creek",
+    "name": "Ash Creek",
+    "region": "Blackstone Canyon",
+    "population": "640",
+    "tags": [
+      "frontier",
+      "rail stop",
+      "mining",
+      "ill-fated"
+    ],
+    "category": "towns",
+    "body": "## Overview\r\n\r\nAsh Creek is a small frontier settlement built around the Blackstone Line railway. Home to miners, ranchers, and railroad workers, it serves as a modest supply stop on the edge of the western frontier. Most travelers pass through without a second thought.\r\n\r\n## Notables\r\n\r\n- Blackstone Railway Depot\r\n- The Cinder Spur Saloon\r\n- St. Mercy Chapel",
+    "bodyHtml": "<h2>Overview</h2>\n<p>Ash Creek is a small frontier settlement built around the Blackstone Line railway. Home to miners, ranchers, and railroad workers, it serves as a modest supply stop on the edge of the western frontier. Most travelers pass through without a second thought.</p>\n<h2>Notables</h2>\n<ul>\n<li>Blackstone Railway Depot</li>\n<li>The Cinder Spur Saloon</li>\n<li>St. Mercy Chapel</li>\n</ul>"
+  }
+]

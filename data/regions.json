@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "blackstone-canyon",
+    "name": "Blackstone Canyon",
+    "climate": "arid-badlands",
+    "tags": [
+      "red rock",
+      "rail line",
+      "outlaw territory"
+    ],
+    "category": "regions",
+    "body": "## Overview\r\n\r\nBlackstone Canyon is a rugged maze of red stone cliffs, narrow passes, and dry riverbeds that cuts through the heart of the western frontier. The Blackstone Line railway winds through its steep walls, carrying silver, payroll, and government cargo westward. Its countless ledges and hidden trails make it a haven for outlaws and ambushes.\r\n\r\n## Landmarks\r\n\r\n- **Devil's Switchback**  \r\n  A treacherous section of track where the railway loops sharply around a sheer cliff face. Trains are forced to slow here, making it the ideal location for robberies.\r\n\r\n- **Widow's Drop**  \r\n  A towering overlook that plunges hundreds of feet into the canyon below. Legend says a grieving woman threw herself from the edge after waiting in vain for her husband to return from the mines.\r\n\r\n- **Blackstone Line Pass**  \r\n  The narrowest part of the canyon, where rails, wagon trails, and telegraph poles run side by side through a corridor of towering stone walls.",
+    "bodyHtml": "<h2>Overview</h2>\n<p>Blackstone Canyon is a rugged maze of red stone cliffs, narrow passes, and dry riverbeds that cuts through the heart of the western frontier. The Blackstone Line railway winds through its steep walls, carrying silver, payroll, and government cargo westward. Its countless ledges and hidden trails make it a haven for outlaws and ambushes.</p>\n<h2>Landmarks</h2>\n<ul>\n<li><strong>Devil's Switchback</strong></li>\n</ul>\n<p>A treacherous section of track where the railway loops sharply around a sheer cliff face. Trains are forced to slow here, making it the ideal location for robberies.</p>\n<ul>\n<li><strong>Widow's Drop</strong></li>\n</ul>\n<p>A towering overlook that plunges hundreds of feet into the canyon below. Legend says a grieving woman threw herself from the edge after waiting in vain for her husband to return from the mines.</p>\n<ul>\n<li><strong>Blackstone Line Pass</strong></li>\n</ul>\n<p>The narrowest part of the canyon, where rails, wagon trails, and telegraph poles run side by side through a corridor of towering stone walls.</p>"
+  }
+]

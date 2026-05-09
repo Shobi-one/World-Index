@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "red-mesa",
+    "name": "Red Mesa",
+    "region": "The Far West",
+    "elevation": "4275",
+    "tags": [
+      "cursed",
+      "frontier",
+      "badlands"
+    ],
+    "category": "mesas",
+    "body": "## Overview\r\n\r\nRed Mesa is a vast plateau of crimson stone rising above the western frontier. Feared by settlers and indigenous tribes alike, it is a place of strange disappearances, ghost stories. Few who venture too close return unchanged.\r\n\r\n## Features\r\n\r\n- Towering red sandstone cliffs and labyrinthine canyons.\r\n- Frequent dust storms that distort sound and direction.",
+    "bodyHtml": "<h2>Overview</h2>\n<p>Red Mesa is a vast plateau of crimson stone rising above the western frontier. Feared by settlers and indigenous tribes alike, it is a place of strange disappearances, ghost stories. Few who venture too close return unchanged.</p>\n<h2>Features</h2>\n<ul>\n<li>Towering red sandstone cliffs and labyrinthine canyons.</li>\n<li>Frequent dust storms that distort sound and direction.</li>\n</ul>"
+  }
+]

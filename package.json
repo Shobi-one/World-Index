@@ -1,0 +1,9 @@
+{
+  "name": "world-index",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RDR2-inspired D&D world index static site",
+  "scripts": {
+    "build:content": "node scripts/build-content.mjs"
+  }
+}
