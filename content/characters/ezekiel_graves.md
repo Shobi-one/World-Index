@@ -26,5 +26,5 @@ To his gang, Ezekiel is a father figure and strategist. To the law, he is one of
 
 After losing his family to powerful railroad interests, Ezekiel turned against the system he once served. Over the years, he built the Graves Gang from drifters, deserters, and lost souls.
 
-Now as the frontier grows and the reach of the law, Ezekiel must decide how far he is willing to go to keep his family alive.
+Now, as the frontier grows and does the reach of the law Ezekiel must decide how far he is willing to go to keep his family alive.
 
