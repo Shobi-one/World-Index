@@ -1,6 +1,6 @@
 # World Index
 
-RDR2-inspired D&D world index built with plain HTML/CSS/JS and Markdown content.
+World index built with plain HTML/CSS/JS and Markdown content.
 
 ## Start
 
