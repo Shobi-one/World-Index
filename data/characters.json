@@ -1,5 +1,23 @@
 [
   {
+    "slug": "clara-hartwell",
+    "name": "Clara Hartwell",
+    "title": "Quartermaster",
+    "clan": "The Graves Gang",
+    "home_town": "Dustfall",
+    "tags": [
+      "medic",
+      "quartermaster",
+      "confidante"
+    ],
+    "portrait": "assets/images/clara-closeup.svg",
+    "full_body": "assets/images/clara-full.svg",
+    "accent": "burgundy",
+    "category": "characters",
+    "body": "## Profile\r\n\r\nClara Hartwell keeps the Graves Gang alive. She serves as the gang's medic, quartermaster, and moral compass. Practical, sharp-minded, and fiercely loyal, Clara is one of the few people willing to challenge Ezekiel Graves when his decisions put the gang at risk.\r\n\r\n## Notes\r\n\r\n- Treats wounds and manages the gang's supplies.\r\n- Calm under pressure and difficult to intimidate.\r\n- Values innocent lives and avoids unnecessary bloodshed.\r\n- One of Ezekiel's most trusted confidantes.\r\n\r\n## Background\r\n\r\nClara grew up in Dustfall, where she learned herbal medicine and practical healing from her mother. After local mine owners drove her family from their home, she drifted west and eventually crossed paths with Ezekiel Graves. He offered her a place in the gang, and she became the steady hand that holds the family together.",
+    "bodyHtml": "<h2>Profile</h2>\n<p>Clara Hartwell keeps the Graves Gang alive. She serves as the gang's medic, quartermaster, and moral compass. Practical, sharp-minded, and fiercely loyal, Clara is one of the few people willing to challenge Ezekiel Graves when his decisions put the gang at risk.</p>\n<h2>Notes</h2>\n<ul>\n<li>Treats wounds and manages the gang's supplies.</li>\n<li>Calm under pressure and difficult to intimidate.</li>\n<li>Values innocent lives and avoids unnecessary bloodshed.</li>\n<li>One of Ezekiel's most trusted confidantes.</li>\n</ul>\n<h2>Background</h2>\n<p>Clara grew up in Dustfall, where she learned herbal medicine and practical healing from her mother. After local mine owners drove her family from their home, she drifted west and eventually crossed paths with Ezekiel Graves. He offered her a place in the gang, and she became the steady hand that holds the family together.</p>"
+  },
+  {
     "slug": "ezekiel-graves",
     "name": "Ezekiel Graves",
     "title": "Leader of the Graves Gang",
@@ -54,11 +72,5 @@
     "category": "characters",
     "body": "## Profile\n\nJambo One is a robot who was used to hunt for a group of misfits. He gained sentience through a situation and now follows Ezekiel, \"the only man he knows\".\n\n## Notes\n\n- Believes feelings are a code made to control people  \n- Protects the gang under Ezekiel's orders  \n- Doesn't understand what he is  \n\n## Background\n\nAfter nearly being destroyed, something happened to Jambo's wiring, and he murdered his old family. All he remembers is they forced him to kill and farm to give them food, but never gave him any for a reason he couldn't understand.\n\nNow, he works with Ezekiel, who gives him his spoils and treats him just like another group member and not a slave.",
     "bodyHtml": "<h2>Profile</h2>\n<p>Jambo One is a robot who was used to hunt for a group of misfits. He gained sentience through a situation and now follows Ezekiel, \"the only man he knows\".</p>\n<h2>Notes</h2>\n<ul>\n<li>Believes feelings are a code made to control people</li>\n<li>Protects the gang under Ezekiel's orders</li>\n<li>Doesn't understand what he is</li>\n</ul>\n<h2>Background</h2>\n<p>After nearly being destroyed, something happened to Jambo's wiring, and he murdered his old family. All he remembers is they forced him to kill and farm to give them food, but never gave him any for a reason he couldn't understand.</p>\n<p>Now, he works with Ezekiel, who gives him his spoils and treats him just like another group member and not a slave.</p>"
-  },
-  {
-    "slug": "sean-macguire",
-    "category": "characters",
-    "body": "",
-    "bodyHtml": ""
   }
 ]

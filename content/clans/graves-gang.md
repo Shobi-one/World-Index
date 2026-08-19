@@ -1,6 +1,6 @@
 ---
 slug: graves-gang
-name: Graves Gang
+name: The Graves Gang
 region: The American Frontier
 leader: Ezekiel Graves
 tags: outlaws, gunslingers, drifters, family

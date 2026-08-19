@@ -45,11 +45,17 @@ function excerptFromBody(body, max = 160) {
     return "";
   }
 
-  if (body.length <= max) {
-    return body;
+  const plainText = String(body)
+    .replace(/^#{1,6}\s+/gm, "")
+    .replace(/^[*-]\s+/gm, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (plainText.length <= max) {
+    return plainText;
   }
 
-  return `${body.slice(0, max).trim()}...`;
+  return `${plainText.slice(0, max).trim()}...`;
 }
 
 function tagsToString(tags) {
@@ -264,6 +270,23 @@ async function renderCategoryPage() {
         })
         .join("");
 
+      let membersSection = "";
+      if (type === "clans") {
+        const characters = await loadJson("characters");
+        const clanMembers = characters.filter((char) => char.clan === primaryTitle);
+        if (clanMembers.length > 0) {
+          const membersHtml = clanMembers
+            .map((member) => `<li><a href="character.html?slug=${member.slug}">${escapeHtml(member.name || member.title)}</a></li>`)
+            .join("");
+          membersSection = `
+            <details class="members-dropdown">
+              <summary><strong>Members (${clanMembers.length})</strong></summary>
+              <ul class="members-list">${membersHtml}</ul>
+            </details>
+          `;
+        }
+      }
+
       title.textContent = primaryTitle;
       desc.textContent = `Detailed entry from ${CATEGORY_META[type].label}.`;
       document.title = `${primaryTitle} | ${CATEGORY_META[type].label} | World Index`;
@@ -271,6 +294,7 @@ async function renderCategoryPage() {
       target.innerHTML = `<article class="card entry-detail">
         <p><a href="category.html?type=${type}">Back to ${escapeHtml(CATEGORY_META[type].label)}</a></p>
         ${metaItems ? `<ul class="entry-meta-list">${metaItems}</ul>` : ""}
+        ${membersSection}
         <section class="entry-body">${record.bodyHtml || "<p>No description available.</p>"}</section>
       </article>`;
       return;
@@ -336,6 +360,9 @@ async function renderCharacterPage() {
 
   try {
     const characters = await loadJson("characters");
+    const clans = await loadJson("clans");
+    const towns = await loadJson("towns");
+    
     const character = characters.find((entry) => entry.slug === slug);
 
     if (!character) {
@@ -346,6 +373,19 @@ async function renderCharacterPage() {
     document.title = `${character.name} | World Index`;
 
     const tags = tagsToString(character.tags);
+
+    // Find clan slug by matching name
+    const clanRecord = clans.find((c) => c.name === character.clan);
+    const clanLink = clanRecord 
+      ? `<a href="category.html?type=clans&slug=${clanRecord.slug}">${escapeHtml(character.clan)}</a>`
+      : escapeHtml(character.clan || "None");
+
+    // Find town slug by matching name
+    const townName = Array.isArray(character.home_town) ? character.home_town.join(", ") : character.home_town;
+    const townRecord = towns.find((t) => t.name === townName);
+    const townLink = townRecord
+      ? `<a href="category.html?type=towns&slug=${townRecord.slug}">${escapeHtml(townName)}</a>`
+      : escapeHtml(townName || "Unknown");
 
     target.innerHTML = `<article class="character-frame">
       <div class="character-composition">
@@ -360,8 +400,8 @@ async function renderCharacterPage() {
             <h1 class="character-name">${escapeHtml(character.name || "Unknown")}</h1>
             <p class="character-title">${escapeHtml(character.title || "Unknown Title")}</p>
             <ul class="character-meta-list">
-              <li><strong>Clan:</strong> ${escapeHtml(character.clan || "None")}</li>
-              <li><strong>Home:</strong> ${escapeHtml(character.home_town || "Unknown")}</li>
+              <li><strong>Clan:</strong> ${clanLink}</li>
+              <li><strong>Home:</strong> ${townLink}</li>
               <li><strong>Tags:</strong> ${escapeHtml(tags || "None")}</li>
             </ul>
             <section class="character-body">${character.bodyHtml || "<p>No biography available yet.</p>"}</section>

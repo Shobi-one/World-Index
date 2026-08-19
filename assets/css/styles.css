@@ -361,6 +361,48 @@ body[data-page="characters"] .card {
   letter-spacing: 0.04em;
 }
 
+.members-dropdown {
+  margin: 1rem 0;
+  padding: 0.8rem;
+  background: rgba(223, 209, 191, 0.4);
+  border: 1px solid var(--line-light);
+  border-radius: 4px;
+}
+
+.members-dropdown summary {
+  cursor: pointer;
+  user-select: none;
+  color: var(--blood-rust);
+  padding: 0.3rem 0;
+}
+
+.members-dropdown summary:hover {
+  opacity: 0.8;
+}
+
+.members-list {
+  margin: 0.6rem 0 0;
+  padding: 0.6rem 0 0;
+  border-top: 1px solid var(--line-light);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.members-list li {
+  font-size: 0.9rem;
+}
+
+.members-list a {
+  color: var(--blood-rust);
+  text-decoration: none;
+}
+
+.members-list a:hover {
+  text-decoration: underline;
+}
+
 .category-tiles {
   margin-top: 1.1rem;
   display: grid;
@@ -516,6 +558,17 @@ body[data-page="character"] .main {
 .character-meta-list strong {
   color: var(--gold-dust);
   margin-right: 0.3rem;
+}
+
+.character-meta-list a {
+  color: var(--gold-dust);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.character-meta-list a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
 
 .character-body {
